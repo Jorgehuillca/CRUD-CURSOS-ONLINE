@@ -2,19 +2,20 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f9;
+  background-color: #060613;
   margin: 40px;
   color: #333;
 }
 
 h2 {
-  color: #4a90e2;
+  color: #3dd8ff;
+  text-shadow: 0px 0px 20px rgb(39, 225, 250);
   margin-bottom: 20px;
   text-align: center;
 }
 
 form {
-  background-color: #fff;
+  background-color: #092f52;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -65,25 +66,11 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  color: white;
+  background-color: #0e5292;
+  box-shadow: 0px 0px 10px rgb(39, 96, 180);
 }
 
-table th,
-table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-}
-
-table th {
-  background-color: #e6f0fa;
-  color: #333;
-}
-
-table tr:hover {
-  background-color: #f1f1f1;
-}
 
 /* ======================================= */
 /*           Vista de la Tabla             */
@@ -98,14 +85,20 @@ h2 {
 table {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 5px 5px 10px -5px#333;
 }
 
-table th {
-  background-color: #4a90e2;
+table th,
+table td  {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+  border: 1px solid #0d1113;
+  padding: 12px;
+  text-align: center;
+}
+
+table th{
+  background-color: #4a90e2;
 }
 
 table td {
@@ -114,7 +107,7 @@ table td {
 
 /* Fila hover */
 table tr:hover {
-  background-color: #eaf2ff;
+  background-color: #07255f;
   transition: background-color 0.3s ease;
 }
 
@@ -129,6 +122,7 @@ table tr:hover {
 
 .btn-editar {
   background-color: #ffb74d;
+  box-shadow: 0px 0px 10px rgb(162, 173, 62);
   color: #fff;
 }
 
@@ -138,6 +132,7 @@ table tr:hover {
 
 .btn-eliminar {
   background-color: #e57373;
+  box-shadow: 0px 0px 10px rgb(230, 99, 82);
   color: #fff;
 }
 
@@ -150,7 +145,8 @@ table tr:hover {
   display: block;
   width: fit-content;
   margin: 30px auto;
-  background-color: #4caf50;
+  background-color: #47c44b;
+  box-shadow: 0px 0px 10px rgb(73, 177, 73);
   color: #fff;
   padding: 10px 20px;
   border-radius: 6px;
@@ -175,7 +171,7 @@ p label {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
 }
 
 select{
@@ -185,7 +181,10 @@ select{
 p input, p select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  color: white;
+  background-color: #07255f;
+  border: 1px solid #21c0ff;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
   border-radius: 6px;
   font-size: 15px;
   box-sizing: border-box;
@@ -196,3 +195,20 @@ p input:focus, p select:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
 }
+
+form button {
+  background-color: #40ff50;
+  box-shadow: 0 0 10px #40ff50;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #40ff50;
+}
+/* ======================================= */
+/*                                         */
+/* ======================================= */
