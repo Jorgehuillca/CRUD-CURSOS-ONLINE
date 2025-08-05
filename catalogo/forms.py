@@ -12,12 +12,10 @@ class CursoForm(forms.ModelForm):
         # Validación de longitud mínima
         if len(curso) < 3:
             raise forms.ValidationError('El nombre del curso debe tener al menos 3 caracteres.')
-
-        # Validación de nombre reservado
-        if curso.lower() == 'prueba':
-            raise forms.ValidationError('El nombre "Prueba" está reservado para test.')
-
+        
         return curso
+
+        
 
     def clean_duracion(self):
         duracion = self.cleaned_data.get('duracion')
