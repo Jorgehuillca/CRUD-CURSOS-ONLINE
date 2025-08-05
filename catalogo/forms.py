@@ -14,8 +14,8 @@ class CursoForm(forms.ModelForm):
             raise forms.ValidationError('El nombre del curso debe tener al menos 3 caracteres.')
 
         # Validación de nombre reservado
-        if curso.lower() == 'prueba':
-            raise forms.ValidationError('El nombre "Prueba" está reservado para test.')
+        if curso.lower()== 'prueba':
+            raise forms.ValidationError('El nombre "Prueba" no está permitido.')
 
         return curso
 
