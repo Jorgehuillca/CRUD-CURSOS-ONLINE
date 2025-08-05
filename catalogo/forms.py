@@ -8,16 +8,23 @@ class CursoForm(forms.ModelForm):
 
     def clean_curso(self):
         curso = self.cleaned_data.get('curso', '').strip()
+        self._validar_longitud(curso)
+        self._validar_reservado(curso)
+        return curso
+
+    def _validar_longitud(self, curso):
 
         # Validación de longitud mínima
         if len(curso) < 3:
             raise forms.ValidationError('El nombre del curso debe tener al menos 3 caracteres.')
+    
+    def _validar_reservado(self, curso):
 
         # Validación de nombre reservado
         if curso.lower()== 'prueba':
-            raise forms.ValidationError('El nombre "Prueba" no está permitido.')
+            raise forms.ValidationError('El nombre "Prueba" está reservado para test.')
 
-        return curso
+        
 
     def clean_duracion(self):
         duracion = self.cleaned_data.get('duracion')
