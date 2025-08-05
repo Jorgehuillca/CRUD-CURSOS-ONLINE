@@ -84,3 +84,115 @@ table th {
 table tr:hover {
   background-color: #f1f1f1;
 }
+
+/* ======================================= */
+/*           Vista de la Tabla             */
+/* ======================================= */
+/* Título */
+h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Tabla */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px -5px#333;
+}
+
+table th {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+table td {
+  font-size: 15px;
+}
+
+/* Fila hover */
+table tr:hover {
+  background-color: #eaf2ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Enlaces como botones */
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.btn-editar {
+  background-color: #ffb74d;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #ffa726;
+}
+
+.btn-eliminar {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.btn-eliminar:hover {
+  background-color: #ef5350;
+}
+
+/* Botón de crear nuevo curso */
+.btn-crear{
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-crear:hover {
+  background-color: #388e3c;
+}
+
+/* ======================================= */
+/*          Creacion de la tabla           */
+/* ======================================= */
+
+p {
+  margin-bottom: 20px;
+}
+
+p label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+select{
+  cursor: pointer;
+}
+
+p input, p select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+p input:focus, p select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
