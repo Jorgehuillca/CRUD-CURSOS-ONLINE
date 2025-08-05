@@ -1,0 +1,198 @@
+/* style.css - Diseño general del sitio */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  margin: 40px;
+  color: #333;
+}
+
+h2 {
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357ab8;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  list-style: none;
+  border-left: 4px solid #f39c12;
+  background-color: #fffbe6;
+}
+
+li.success {
+  color: green;
+}
+
+li.error {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #e6f0fa;
+  color: #333;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ======================================= */
+/*           Vista de la Tabla             */
+/* ======================================= */
+/* Título */
+h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Tabla */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px -5px#333;
+}
+
+table th {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+table td {
+  font-size: 15px;
+}
+
+/* Fila hover */
+table tr:hover {
+  background-color: #eaf2ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Enlaces como botones */
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.btn-editar {
+  background-color: #ffb74d;
+  color: #fff;
+}
+
+.btn-editar:hover {
+  background-color: #ffa726;
+}
+
+.btn-eliminar {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.btn-eliminar:hover {
+  background-color: #ef5350;
+}
+
+/* Botón de crear nuevo curso */
+.btn-crear{
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-crear:hover {
+  background-color: #388e3c;
+}
+
+/* ======================================= */
+/*          Creacion de la tabla           */
+/* ======================================= */
+
+p {
+  margin-bottom: 20px;
+}
+
+p label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+select{
+  cursor: pointer;
+}
+
+p input, p select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+p input:focus, p select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
