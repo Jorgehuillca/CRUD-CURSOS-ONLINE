@@ -1,12 +1,12 @@
 # Entorno virtual
 env/
 
-# Archivos de Python compilados
+# Ignorar archivos pyc y cache
 __pycache__/
-*.py[cod]
-
-# Archivos de base de datos
-*.sqlite3
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
 
 # Archivos de configuración del editor
 .vscode/
