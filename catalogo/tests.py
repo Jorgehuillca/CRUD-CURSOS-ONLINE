@@ -82,6 +82,20 @@ class CursoFormTest(TestCase):
         self.assertFalse(form.is_valid())
         self.assertIn('La plataforma es obligatoria.', form.errors['plataforma'])
         print("✅ Plataforma vacía detectada correctamente")
+    
+    # test que falla
+
+    def test_form_falla_si_nombre_es_prueba(self):
+        form_data = {
+            'curso': 'Prueba',  # 🚨 nombre reservado
+            'duracion': '5 horas',
+            'plataforma': 'Platzi',
+            'dificultad': 'Básico'
+        }
+        form = CursoForm(data=form_data)
+        self.assertFalse(form.is_valid())  # Esperamos que sea inválido
+        self.assertIn('El nombre "Prueba" está reservado para test.', form.errors['curso'])
+        print("✅ Nombre reservado detectado correctamente")
 
 
 # 🌐 TESTS DE VISTAS
@@ -147,3 +161,7 @@ class CursoUrlsTest(TestCase):
         self.assertEqual(reverse('editar_curso', args=[1]), '/editar/1/')
         self.assertEqual(reverse('eliminar_curso', args=[1]), '/eliminar/1/')
         print("✅ Todas las rutas están configuradas correctamente")
+
+
+
+
